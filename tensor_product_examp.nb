@@ -1,0 +1,553 @@
+(* Content-type: application/vnd.wolfram.mathematica *)
+
+(*** Wolfram Notebook File ***)
+(* http://www.wolfram.com/nb *)
+
+(* CreatedBy='Mathematica 12.1' *)
+
+(*CacheID: 234*)
+(* Internal cache information:
+NotebookFileLineBreakTest
+NotebookFileLineBreakTest
+NotebookDataPosition[       158,          7]
+NotebookDataLength[     20103,        545]
+NotebookOptionsPosition[     19527,        527]
+NotebookOutlinePosition[     19922,        543]
+CellTagsIndexPosition[     19879,        540]
+WindowFrame->Normal*)
+
+(* Beginning of Notebook Content *)
+Notebook[{
+
+Cell[CellGroupData[{
+Cell[BoxData[{
+ RowBox[{
+  RowBox[{"a1", " ", "=", " ", 
+   RowBox[{"(", "\[NoBreak]", GridBox[{
+      {"a", "1"},
+      {"2", "b"}
+     }], "\[NoBreak]", ")"}]}], ";"}], "\[IndentingNewLine]", 
+ RowBox[{
+  RowBox[{"a2", " ", "=", " ", 
+   RowBox[{"(", "\[NoBreak]", GridBox[{
+      {"c", "3"},
+      {"4", "d"}
+     }], "\[NoBreak]", ")"}]}], ";"}], "\[IndentingNewLine]", 
+ RowBox[{
+  RowBox[{
+   RowBox[{"MatOuter", "[", 
+    RowBox[{"mat1_", ",", "mat2_"}], "]"}], " ", ":=", " ", 
+   RowBox[{"(", "\[NoBreak]", GridBox[{
+      {
+       RowBox[{"Part", "[", 
+        RowBox[{
+         RowBox[{"Part", "[", 
+          RowBox[{
+           RowBox[{"Part", "[", 
+            RowBox[{
+             RowBox[{"Part", "[", 
+              RowBox[{
+               RowBox[{"TensorProduct", "[", 
+                RowBox[{"mat1", ",", "mat2"}], "]"}], ",", "1"}], "]"}], ",", 
+             "1"}], "]"}], ",", "1"}], "]"}], ",", "1"}], "]"}], 
+       RowBox[{"Part", "[", 
+        RowBox[{
+         RowBox[{"Part", "[", 
+          RowBox[{
+           RowBox[{"Part", "[", 
+            RowBox[{
+             RowBox[{"Part", "[", 
+              RowBox[{
+               RowBox[{"TensorProduct", "[", 
+                RowBox[{"mat1", ",", "mat2"}], "]"}], ",", "1"}], "]"}], ",", 
+             "2"}], "]"}], ",", "1"}], "]"}], ",", "2"}], "]"}]},
+      {
+       RowBox[{"Part", "[", 
+        RowBox[{
+         RowBox[{"Part", "[", 
+          RowBox[{
+           RowBox[{"Part", "[", 
+            RowBox[{
+             RowBox[{"Part", "[", 
+              RowBox[{
+               RowBox[{"TensorProduct", "[", 
+                RowBox[{"mat1", ",", "mat2"}], "]"}], ",", "2"}], "]"}], ",", 
+             "1"}], "]"}], ",", "2"}], "]"}], ",", "1"}], "]"}], 
+       RowBox[{"Part", "[", 
+        RowBox[{
+         RowBox[{"Part", "[", 
+          RowBox[{
+           RowBox[{"Part", "[", 
+            RowBox[{
+             RowBox[{"Part", "[", 
+              RowBox[{
+               RowBox[{"TensorProduct", "[", 
+                RowBox[{"mat1", ",", "mat2"}], "]"}], ",", "2"}], "]"}], ",", 
+             "2"}], "]"}], ",", "2"}], "]"}], ",", "2"}], "]"}]}
+     }], "\[NoBreak]", ")"}]}], ";"}], "\[IndentingNewLine]", 
+ RowBox[{
+  RowBox[{"test", " ", "=", " ", 
+   RowBox[{"MatOuter", "[", 
+    RowBox[{"a1", ",", "a2"}], "]"}]}], ";"}], "\[IndentingNewLine]", 
+ RowBox[{
+  RowBox[{
+   RowBox[{"MatrixForm", "[", "test", "]"}], ";"}], 
+  "\[IndentingNewLine]"}], "\[IndentingNewLine]", 
+ RowBox[{
+  RowBox[{"b1", " ", "=", " ", 
+   RowBox[{"(", "\[NoBreak]", GridBox[{
+      {"a", "b", "0"},
+      {"c", "d", "0"},
+      {"0", "2", "3"}
+     }], "\[NoBreak]", ")"}]}], ";"}], "\[IndentingNewLine]", 
+ RowBox[{
+  RowBox[{"b2", " ", "=", " ", 
+   RowBox[{"(", "\[NoBreak]", GridBox[{
+      {"w", "x", "0"},
+      {"y", "z", "0"},
+      {"0", "4", "5"}
+     }], "\[NoBreak]", ")"}]}], ";"}], "\[IndentingNewLine]", 
+ RowBox[{
+  RowBox[{
+   RowBox[{"MatOutertwo", "[", 
+    RowBox[{"mat1_", ",", "mat2_"}], "]"}], " ", ":=", 
+   RowBox[{"(", "\[NoBreak]", GridBox[{
+      {
+       RowBox[{"Part", "[", 
+        RowBox[{
+         RowBox[{"Part", "[", 
+          RowBox[{
+           RowBox[{"Part", "[", 
+            RowBox[{
+             RowBox[{"Part", "[", 
+              RowBox[{
+               RowBox[{"TensorProduct", "[", 
+                RowBox[{"mat1", ",", "mat2"}], "]"}], ",", "1"}], "]"}], ",", 
+             "1"}], "]"}], ",", "1"}], "]"}], ",", "1"}], "]"}], 
+       RowBox[{"Part", "[", 
+        RowBox[{
+         RowBox[{"Part", "[", 
+          RowBox[{
+           RowBox[{"Part", "[", 
+            RowBox[{
+             RowBox[{"Part", "[", 
+              RowBox[{
+               RowBox[{"TensorProduct", "[", 
+                RowBox[{"mat1", ",", "mat2"}], "]"}], ",", "1"}], "]"}], ",", 
+             "2"}], "]"}], ",", "1"}], "]"}], ",", "2"}], "]"}], 
+       RowBox[{"Part", "[", 
+        RowBox[{
+         RowBox[{"Part", "[", 
+          RowBox[{
+           RowBox[{"Part", "[", 
+            RowBox[{
+             RowBox[{"Part", "[", 
+              RowBox[{
+               RowBox[{"TensorProduct", "[", 
+                RowBox[{"mat1", ",", "mat2"}], "]"}], ",", "1"}], "]"}], ",", 
+             "3"}], "]"}], ",", "1"}], "]"}], ",", "3"}], "]"}]},
+      {
+       RowBox[{"Part", "[", 
+        RowBox[{
+         RowBox[{"Part", "[", 
+          RowBox[{
+           RowBox[{"Part", "[", 
+            RowBox[{
+             RowBox[{"Part", "[", 
+              RowBox[{
+               RowBox[{"TensorProduct", "[", 
+                RowBox[{"mat1", ",", "mat2"}], "]"}], ",", "2"}], "]"}], ",", 
+             "1"}], "]"}], ",", "2"}], "]"}], ",", "1"}], "]"}], 
+       RowBox[{"Part", "[", 
+        RowBox[{
+         RowBox[{"Part", "[", 
+          RowBox[{
+           RowBox[{"Part", "[", 
+            RowBox[{
+             RowBox[{"Part", "[", 
+              RowBox[{
+               RowBox[{"TensorProduct", "[", 
+                RowBox[{"mat1", ",", "mat2"}], "]"}], ",", "2"}], "]"}], ",", 
+             "2"}], "]"}], ",", "2"}], "]"}], ",", "2"}], "]"}], 
+       RowBox[{"Part", "[", 
+        RowBox[{
+         RowBox[{"Part", "[", 
+          RowBox[{
+           RowBox[{"Part", "[", 
+            RowBox[{
+             RowBox[{"Part", "[", 
+              RowBox[{
+               RowBox[{"TensorProduct", "[", 
+                RowBox[{"mat1", ",", "mat2"}], "]"}], ",", "2"}], "]"}], ",", 
+             "3"}], "]"}], ",", "2"}], "]"}], ",", "3"}], "]"}]},
+      {
+       RowBox[{"Part", "[", 
+        RowBox[{
+         RowBox[{"Part", "[", 
+          RowBox[{
+           RowBox[{"Part", "[", 
+            RowBox[{
+             RowBox[{"Part", "[", 
+              RowBox[{
+               RowBox[{"TensorProduct", "[", 
+                RowBox[{"mat1", ",", "mat2"}], "]"}], ",", "3"}], "]"}], ",", 
+             "1"}], "]"}], ",", "3"}], "]"}], ",", "1"}], "]"}], 
+       RowBox[{"Part", "[", 
+        RowBox[{
+         RowBox[{"Part", "[", 
+          RowBox[{
+           RowBox[{"Part", "[", 
+            RowBox[{
+             RowBox[{"Part", "[", 
+              RowBox[{
+               RowBox[{"TensorProduct", "[", 
+                RowBox[{"mat1", ",", "mat2"}], "]"}], ",", "3"}], "]"}], ",", 
+             "2"}], "]"}], ",", "3"}], "]"}], ",", "2"}], "]"}], 
+       RowBox[{"Part", "[", 
+        RowBox[{
+         RowBox[{"Part", "[", 
+          RowBox[{
+           RowBox[{"Part", "[", 
+            RowBox[{
+             RowBox[{"Part", "[", 
+              RowBox[{
+               RowBox[{"TensorProduct", "[", 
+                RowBox[{"mat1", ",", "mat2"}], "]"}], ",", "3"}], "]"}], ",", 
+             "3"}], "]"}], ",", "3"}], "]"}], ",", "3"}], "]"}]}
+     }], "\[NoBreak]", ")"}]}], ";"}], "\[IndentingNewLine]", 
+ RowBox[{
+  RowBox[{"MatrixForm", "[", 
+   RowBox[{"MatOutertwo", "[", 
+    RowBox[{"b1", ",", "b2"}], "]"}], "]"}], "\[IndentingNewLine]", 
+  "\[IndentingNewLine]", "\[IndentingNewLine]", 
+  RowBox[{"(*", "                   ", 
+   RowBox[{"vec", " ", "outer", " ", "stuff", " ", "below", " ", "here"}], 
+   "                          ", "*)"}], 
+  "\[IndentingNewLine]"}], "\[IndentingNewLine]", 
+ RowBox[{
+  RowBox[{"vec1", " ", "=", " ", 
+   RowBox[{"(", "\[NoBreak]", GridBox[{
+      {"nx"},
+      {"ny"},
+      {"nz"}
+     }], "\[NoBreak]", ")"}]}], ";"}], "\[IndentingNewLine]", 
+ RowBox[{
+  RowBox[{
+   RowBox[{"vec2", " ", "=", " ", 
+    RowBox[{"(", "\[NoBreak]", GridBox[{
+       {"nx"},
+       {"ny"},
+       {"nz"}
+      }], "\[NoBreak]", ")"}]}], ";"}], "\[IndentingNewLine]", 
+  RowBox[{"(*", " ", 
+   RowBox[{
+    RowBox[{"this", " ", "switches", " ", "from", " ", "horizontal", " ", 
+     RowBox[{"(", "row", ")"}]}], ",", " ", 
+    RowBox[{"to", " ", "column", " ", 
+     RowBox[{"(", "vertical", ")"}]}]}], "  ", 
+   "*)"}]}], "\[IndentingNewLine]", 
+ RowBox[{
+  RowBox[{
+   RowBox[{"CheckRow", "[", "vec_", "]"}], " ", ":=", " ", 
+   RowBox[{"If", "[", 
+    RowBox[{
+     RowBox[{
+      RowBox[{"Length", "[", "vec", "]"}], "<", "2"}], ",", " ", 
+     RowBox[{"Transpose", "[", "vec", "]"}], ",", " ", "vec"}], "]"}]}], 
+  ";"}], "\[IndentingNewLine]", 
+ RowBox[{
+  RowBox[{
+   RowBox[{"VecOuter", "[", 
+    RowBox[{"vec1_", ",", "vec2_"}], "]"}], " ", ":=", " ", 
+   RowBox[{"(", "\[NoBreak]", GridBox[{
+      {
+       RowBox[{"Part", "[", 
+        RowBox[{
+         RowBox[{"Part", "[", 
+          RowBox[{
+           RowBox[{"Part", "[", 
+            RowBox[{
+             RowBox[{"Part", "[", 
+              RowBox[{
+               RowBox[{"TensorProduct", "[", 
+                RowBox[{"vec1", ",", "vec2"}], "]"}], ",", "1"}], "]"}], ",", 
+             "1"}], "]"}], ",", "1"}], "]"}], ",", "1"}], "]"}], 
+       RowBox[{"Part", "[", 
+        RowBox[{
+         RowBox[{"Part", "[", 
+          RowBox[{
+           RowBox[{"Part", "[", 
+            RowBox[{
+             RowBox[{"Part", "[", 
+              RowBox[{
+               RowBox[{"TensorProduct", "[", 
+                RowBox[{"vec1", ",", "vec2"}], "]"}], ",", "1"}], "]"}], ",", 
+             "1"}], "]"}], ",", "2"}], "]"}], ",", "1"}], "]"}], 
+       RowBox[{"Part", "[", 
+        RowBox[{
+         RowBox[{"Part", "[", 
+          RowBox[{
+           RowBox[{"Part", "[", 
+            RowBox[{
+             RowBox[{"Part", "[", 
+              RowBox[{
+               RowBox[{"TensorProduct", "[", 
+                RowBox[{"vec1", ",", "vec2"}], "]"}], ",", "1"}], "]"}], ",", 
+             "1"}], "]"}], ",", "3"}], "]"}], ",", "1"}], "]"}]},
+      {
+       RowBox[{"Part", "[", 
+        RowBox[{
+         RowBox[{"Part", "[", 
+          RowBox[{
+           RowBox[{"Part", "[", 
+            RowBox[{
+             RowBox[{"Part", "[", 
+              RowBox[{
+               RowBox[{"TensorProduct", "[", 
+                RowBox[{"vec1", ",", "vec2"}], "]"}], ",", "2"}], "]"}], ",", 
+             "1"}], "]"}], ",", "1"}], "]"}], ",", "1"}], "]"}], 
+       RowBox[{"Part", "[", 
+        RowBox[{
+         RowBox[{"Part", "[", 
+          RowBox[{
+           RowBox[{"Part", "[", 
+            RowBox[{
+             RowBox[{"Part", "[", 
+              RowBox[{
+               RowBox[{"TensorProduct", "[", 
+                RowBox[{"vec1", ",", "vec2"}], "]"}], ",", "2"}], "]"}], ",", 
+             "1"}], "]"}], ",", "2"}], "]"}], ",", "1"}], "]"}], 
+       RowBox[{"Part", "[", 
+        RowBox[{
+         RowBox[{"Part", "[", 
+          RowBox[{
+           RowBox[{"Part", "[", 
+            RowBox[{
+             RowBox[{"Part", "[", 
+              RowBox[{
+               RowBox[{"TensorProduct", "[", 
+                RowBox[{"vec1", ",", "vec2"}], "]"}], ",", "2"}], "]"}], ",", 
+             "1"}], "]"}], ",", "3"}], "]"}], ",", "1"}], "]"}]},
+      {
+       RowBox[{"Part", "[", 
+        RowBox[{
+         RowBox[{"Part", "[", 
+          RowBox[{
+           RowBox[{"Part", "[", 
+            RowBox[{
+             RowBox[{"Part", "[", 
+              RowBox[{
+               RowBox[{"TensorProduct", "[", 
+                RowBox[{"vec1", ",", "vec2"}], "]"}], ",", "3"}], "]"}], ",", 
+             "1"}], "]"}], ",", "1"}], "]"}], ",", "1"}], "]"}], 
+       RowBox[{"Part", "[", 
+        RowBox[{
+         RowBox[{"Part", "[", 
+          RowBox[{
+           RowBox[{"Part", "[", 
+            RowBox[{
+             RowBox[{"Part", "[", 
+              RowBox[{
+               RowBox[{"TensorProduct", "[", 
+                RowBox[{"vec1", ",", "vec2"}], "]"}], ",", "3"}], "]"}], ",", 
+             "1"}], "]"}], ",", "2"}], "]"}], ",", "1"}], "]"}], 
+       RowBox[{"Part", "[", 
+        RowBox[{
+         RowBox[{"Part", "[", 
+          RowBox[{
+           RowBox[{"Part", "[", 
+            RowBox[{
+             RowBox[{"Part", "[", 
+              RowBox[{
+               RowBox[{"TensorProduct", "[", 
+                RowBox[{"vec1", ",", "vec2"}], "]"}], ",", "3"}], "]"}], ",", 
+             "1"}], "]"}], ",", "3"}], "]"}], ",", "1"}], "]"}]}
+     }], "\[NoBreak]", ")"}]}], ";"}], "\[IndentingNewLine]", 
+ RowBox[{
+  RowBox[{
+   RowBox[{"Tr", "[", 
+    RowBox[{"VecOuter", "[", 
+     RowBox[{
+      RowBox[{"CheckRow", "[", "vec1", "]"}], ",", 
+      RowBox[{"CheckRow", "[", "vec2", "]"}]}], "]"}], "]"}], ";"}], 
+  "\[IndentingNewLine]", "\[IndentingNewLine]"}], "\[IndentingNewLine]", 
+ RowBox[{
+  RowBox[{"nhat", " ", "=", " ", 
+   RowBox[{"(", "\[NoBreak]", GridBox[{
+      {"nx"},
+      {"ny"},
+      {"nz"}
+     }], "\[NoBreak]", ")"}]}], ";"}], "\[IndentingNewLine]", 
+ RowBox[{
+  RowBox[{"symmv", " ", "=", " ", 
+   RowBox[{"(", "\[NoBreak]", GridBox[{
+      {"a", "b", "c"},
+      {"d", "e", "f"},
+      {"g", "h", "i"}
+     }], "\[NoBreak]", ")"}]}], ";"}], "\[IndentingNewLine]", 
+ RowBox[{
+  RowBox[{"vecDotmatDotvec", "[", 
+   RowBox[{"vec1_", ",", "mat_", ",", " ", "vec2_"}], "]"}], " ", ":=", " ", 
+  RowBox[{"Part", "[", 
+   RowBox[{
+    RowBox[{"Part", "[", 
+     RowBox[{
+      RowBox[{"Dot", "[", 
+       RowBox[{
+        RowBox[{"Transpose", "[", "vec1", "]"}], ",", 
+        RowBox[{"(", "\[NoBreak]", GridBox[{
+           {
+            RowBox[{"Part", "[", 
+             RowBox[{
+              RowBox[{"Part", "[", 
+               RowBox[{
+                RowBox[{"Dot", "[", 
+                 RowBox[{"mat", ",", "vec2"}], "]"}], ",", "1"}], "]"}], ",", 
+              "1"}], "]"}]},
+           {
+            RowBox[{"Part", "[", 
+             RowBox[{
+              RowBox[{"Part", "[", 
+               RowBox[{
+                RowBox[{"Dot", "[", 
+                 RowBox[{"mat", ",", "vec2"}], "]"}], ",", "2"}], "]"}], ",", 
+              "1"}], "]"}]},
+           {
+            RowBox[{"Part", "[", 
+             RowBox[{
+              RowBox[{"Part", "[", 
+               RowBox[{
+                RowBox[{"Dot", "[", 
+                 RowBox[{"mat", ",", "vec2"}], "]"}], ",", "3"}], "]"}], ",", 
+              "1"}], "]"}]}
+          }], "\[NoBreak]", ")"}]}], "]"}], ",", "1"}], "]"}], ",", "1"}], 
+   "]"}]}], "\[IndentingNewLine]", 
+ RowBox[{
+  RowBox[{"Dot", "[", 
+   RowBox[{"symmv", ",", " ", "nhat"}], "]"}], 
+  "\[IndentingNewLine]"}], "\[IndentingNewLine]"}], "Input",
+ CellChangeTimes->{{3.825305408985509*^9, 3.8253054924074287`*^9}, {
+   3.825305536588044*^9, 3.825305545429496*^9}, {3.825305660098175*^9, 
+   3.8253058907403297`*^9}, {3.825305941808413*^9, 3.825305980445554*^9}, {
+   3.825306011681718*^9, 3.8253060443321323`*^9}, {3.825308900760902*^9, 
+   3.825308963098299*^9}, {3.825309030372471*^9, 3.825309096994094*^9}, {
+   3.8253091605498466`*^9, 3.8253091920970383`*^9}, {3.825309240390813*^9, 
+   3.825309256406621*^9}, {3.82530937974998*^9, 3.825309419197548*^9}, {
+   3.825309701934843*^9, 3.82530970584472*^9}, {3.8253098146174297`*^9, 
+   3.8253098538624487`*^9}, {3.825309890825452*^9, 3.8253098924292507`*^9}, {
+   3.825309964673965*^9, 3.825310005873473*^9}, {3.825310626075008*^9, 
+   3.825310630766987*^9}, {3.825310834552477*^9, 3.825310864648896*^9}, {
+   3.8253109394607773`*^9, 3.825310993785231*^9}, {3.825311078292581*^9, 
+   3.825311172371203*^9}, {3.825311244391444*^9, 3.825311296069047*^9}, {
+   3.825311350729466*^9, 3.825311379561912*^9}, {3.825341274802258*^9, 
+   3.8253412920504837`*^9}, 3.825376214566599*^9, {3.825376250270595*^9, 
+   3.825376370490203*^9}, {3.825381523567622*^9, 3.8253815350990868`*^9}, {
+   3.825381980783435*^9, 3.82538201959975*^9}, 3.82538205321734*^9, {
+   3.825382222487893*^9, 3.82538228268186*^9}, {3.825382316885972*^9, 
+   3.8253823696957397`*^9}, {3.8253824503097763`*^9, 3.825382452185474*^9}, {
+   3.825383602932994*^9, 3.825383614871594*^9}, {3.825383673766836*^9, 
+   3.825383748380938*^9}, {3.8253838032385607`*^9, 3.825383856980482*^9}, {
+   3.8253839698109283`*^9, 3.825383970497641*^9}, {3.82538480699105*^9, 
+   3.8253848507558203`*^9}, {3.825384903666581*^9, 3.825384903865141*^9}, {
+   3.825385097575941*^9, 3.825385112319437*^9}, {3.825385484205675*^9, 
+   3.825385698866911*^9}, {3.825385946494425*^9, 3.825385967233837*^9}, {
+   3.825386071726337*^9, 3.825386085818203*^9}, {3.8253887651852016`*^9, 
+   3.825388808240498*^9}, {3.8253889356819696`*^9, 3.825388958763826*^9}, {
+   3.825388998286681*^9, 3.825389204221167*^9}, {3.825389411894709*^9, 
+   3.825389447429228*^9}, {3.825389672132921*^9, 3.825389672554421*^9}, {
+   3.8253898503608294`*^9, 3.8253898700178547`*^9}, {3.825389972546702*^9, 
+   3.8253900558374157`*^9}, {3.8253900941344433`*^9, 3.825390175871462*^9}, {
+   3.825390219237317*^9, 3.825390241004312*^9}, {3.825390293438553*^9, 
+   3.825390305362619*^9}, {3.825390484669009*^9, 3.825390513869294*^9}, {
+   3.825390548739244*^9, 3.825390552587129*^9}, {3.8253908075656433`*^9, 
+   3.825390822212595*^9}, {3.82539120406885*^9, 3.825391305773892*^9}, {
+   3.82539134620603*^9, 3.825391392255636*^9}, {3.825391430868148*^9, 
+   3.825391431233891*^9}, {3.825391478227754*^9, 3.8253915225233*^9}, {
+   3.825391577734967*^9, 3.825391623246194*^9}, {3.8253917810177507`*^9, 
+   3.82539186454604*^9}, {3.825391932681222*^9, 3.8253920128127413`*^9}, {
+   3.825392066084901*^9, 3.825392143773171*^9}, {3.8254199858916187`*^9, 
+   3.8254201168808317`*^9}, {3.8254201579108*^9, 3.825420456395561*^9}, {
+   3.825420576102584*^9, 3.8254205816795483`*^9}, {3.826689192658948*^9, 
+   3.826689407516035*^9}, {3.82668945797604*^9, 3.826689548217629*^9}},
+ CellLabel->
+  "In[1088]:=",ExpressionUUID->"dc437117-926a-4e22-aada-22b84f825e55"],
+
+Cell[BoxData[
+ TagBox[
+  RowBox[{"(", "\[NoBreak]", GridBox[{
+     {
+      RowBox[{"a", " ", "w"}], 
+      RowBox[{"b", " ", "x"}], "0"},
+     {
+      RowBox[{"c", " ", "y"}], 
+      RowBox[{"d", " ", "z"}], "0"},
+     {"0", "8", "15"}
+    },
+    GridBoxAlignment->{"Columns" -> {{Center}}, "Rows" -> {{Baseline}}},
+    GridBoxSpacings->{"Columns" -> {
+        Offset[0.27999999999999997`], {
+         Offset[0.7]}, 
+        Offset[0.27999999999999997`]}, "Rows" -> {
+        Offset[0.2], {
+         Offset[0.4]}, 
+        Offset[0.2]}}], "\[NoBreak]", ")"}],
+  Function[BoxForm`e$, 
+   MatrixForm[BoxForm`e$]]]], "Output",
+ CellChangeTimes->{{3.825420447392448*^9, 3.825420457302108*^9}, 
+   3.8254205825698338`*^9, 3.826689193169668*^9, {3.82668953486658*^9, 
+   3.8266895487894382`*^9}},
+ CellLabel->
+  "Out[1096]//MatrixForm=",ExpressionUUID->"6ecc0160-3d87-4661-852e-\
+49a23faf3610"],
+
+Cell[BoxData[
+ RowBox[{"{", 
+  RowBox[{
+   RowBox[{"{", 
+    RowBox[{
+     RowBox[{"a", " ", "nx"}], "+", 
+     RowBox[{"b", " ", "ny"}], "+", 
+     RowBox[{"c", " ", "nz"}]}], "}"}], ",", 
+   RowBox[{"{", 
+    RowBox[{
+     RowBox[{"d", " ", "nx"}], "+", 
+     RowBox[{"e", " ", "ny"}], "+", 
+     RowBox[{"f", " ", "nz"}]}], "}"}], ",", 
+   RowBox[{"{", 
+    RowBox[{
+     RowBox[{"g", " ", "nx"}], "+", 
+     RowBox[{"h", " ", "ny"}], "+", 
+     RowBox[{"i", " ", "nz"}]}], "}"}]}], "}"}]], "Output",
+ CellChangeTimes->{{3.825420447392448*^9, 3.825420457302108*^9}, 
+   3.8254205825698338`*^9, 3.826689193169668*^9, {3.82668953486658*^9, 
+   3.8266895488167267`*^9}},
+ CellLabel->
+  "Out[1105]=",ExpressionUUID->"f9cbc973-4dc3-4629-a19b-43f8927d5bbb"]
+}, Open  ]]
+},
+WindowSize->{Full, Full},
+WindowMargins->{{4, Automatic}, {Automatic, 23}},
+FrontEndVersion->"12.1 for Mac OS X x86 (64-bit) (March 18, 2020)",
+StyleDefinitions->"Default.nb",
+ExpressionUUID->"e2c6c33f-bd52-45ad-852f-b031c276da2f"
+]
+(* End of Notebook Content *)
+
+(* Internal cache information *)
+(*CellTagsOutline
+CellTagsIndex->{}
+*)
+(*CellTagsIndex
+CellTagsIndex->{}
+*)
+(*NotebookFileOutline
+Notebook[{
+Cell[CellGroupData[{
+Cell[580, 22, 17283, 450, 1004, "Input",ExpressionUUID->"dc437117-926a-4e22-aada-22b84f825e55"],
+Cell[17866, 474, 888, 26, 78, "Output",ExpressionUUID->"6ecc0160-3d87-4661-852e-49a23faf3610"],
+Cell[18757, 502, 754, 22, 34, "Output",ExpressionUUID->"f9cbc973-4dc3-4629-a19b-43f8927d5bbb"]
+}, Open  ]]
+}
+]
+*)
+
