@@ -1,0 +1,358 @@
+(* Content-type: application/vnd.wolfram.mathematica *)
+
+(*** Wolfram Notebook File ***)
+(* http://www.wolfram.com/nb *)
+
+(* CreatedBy='Mathematica 12.1' *)
+
+(*CacheID: 234*)
+(* Internal cache information:
+NotebookFileLineBreakTest
+NotebookFileLineBreakTest
+NotebookDataPosition[       158,          7]
+NotebookDataLength[     13123,        350]
+NotebookOptionsPosition[     12199,        325]
+NotebookOutlinePosition[     12591,        341]
+CellTagsIndexPosition[     12548,        338]
+WindowFrame->Normal*)
+
+(* Beginning of Notebook Content *)
+Notebook[{
+
+Cell[CellGroupData[{
+Cell[BoxData[{
+ RowBox[{
+  RowBox[{
+   RowBox[{"Export", "[", 
+    RowBox[{"\"\<cyl.png\>\"", ",", 
+     RowBox[{"Graphics3D", "[", 
+      RowBox[{
+       RowBox[{"Cylinder", "[", 
+        RowBox[{
+         RowBox[{"{", 
+          RowBox[{
+           RowBox[{"{", 
+            RowBox[{"0", ",", "0", ",", "0"}], "}"}], ",", 
+           RowBox[{"{", 
+            RowBox[{"1", ",", "1", ",", "0"}], "}"}]}], "}"}], ",", 
+         RowBox[{"1", "/", "5"}]}], "]"}], ",", 
+       RowBox[{"AxesLabel", "\[Rule]", 
+        RowBox[{"{", 
+         RowBox[{
+          RowBox[{"Style", "[", 
+           RowBox[{"\"\<\[Del] \[Times] v\>\"", ",", "Black", ",", 
+            RowBox[{"FontSize", "\[Rule]", "18"}]}], "]"}], ",", 
+          RowBox[{"Style", "[", 
+           RowBox[{"\"\<v\>\"", ",", "Black", ",", 
+            RowBox[{"FontSize", "\[Rule]", "18"}]}], "]"}], ",", 
+          RowBox[{"Style", "[", 
+           RowBox[{"\"\<\[Del]v\>\"", ",", "Black", ",", 
+            RowBox[{"FontSize", "\[Rule]", "18"}]}], "]"}]}], "}"}]}], ",", 
+       RowBox[{"Axes", "\[Rule]", "True"}], ",", " ", 
+       RowBox[{"Ticks", "\[Rule]", 
+        RowBox[{"{", 
+         RowBox[{
+          RowBox[{"{", 
+           RowBox[{
+            RowBox[{"{", 
+             RowBox[{"0", ",", "\"\<\>\""}], "}"}], ",", 
+            RowBox[{"{", 
+             RowBox[{".25", ",", "\"\<\>\""}], "}"}], ",", 
+            RowBox[{"{", 
+             RowBox[{".5", ",", "\"\<\>\""}], "}"}], ",", 
+            RowBox[{"{", 
+             RowBox[{".75", ",", "\"\<\>\""}], "}"}], ",", 
+            RowBox[{"{", 
+             RowBox[{"1", ",", "\"\<\>\""}], "}"}]}], "}"}], ",", 
+          RowBox[{"{", 
+           RowBox[{
+            RowBox[{"{", 
+             RowBox[{"0", ",", "\"\<\>\""}], "}"}], ",", 
+            RowBox[{"{", 
+             RowBox[{".25", ",", "\"\<\>\""}], "}"}], ",", 
+            RowBox[{"{", 
+             RowBox[{".5", ",", "\"\<\>\""}], "}"}], ",", 
+            RowBox[{"{", 
+             RowBox[{".75", ",", "\"\<\>\""}], "}"}], ",", 
+            RowBox[{"{", 
+             RowBox[{"1", ",", "\"\<\>\""}], "}"}]}], "}"}], ",", 
+          RowBox[{"{", 
+           RowBox[{
+            RowBox[{"{", 
+             RowBox[{"0", ",", "\"\<\>\""}], "}"}], ",", 
+            RowBox[{"{", 
+             RowBox[{".25", ",", "\"\<\>\""}], "}"}], ",", 
+            RowBox[{"{", 
+             RowBox[{".5", ",", "\"\<\>\""}], "}"}], ",", 
+            RowBox[{"{", 
+             RowBox[{".75", ",", "\"\<\>\""}], "}"}], ",", 
+            RowBox[{"{", 
+             RowBox[{"1", ",", "\"\<\>\""}], "}"}]}], "}"}]}], "}"}]}]}], 
+      "]"}]}], "]"}], ";"}], "\[IndentingNewLine]", 
+  RowBox[{"(*", 
+   RowBox[{
+    RowBox[{"Directory", "[", "]"}], "\[IndentingNewLine]", 
+    RowBox[{"Graphics3D", "[", 
+     RowBox[{"Text", "[", 
+      RowBox[{"\"\<x\>\"", ",", 
+       RowBox[{"{", 
+        RowBox[{"3", ",", "0", ",", "0"}], "}"}]}], "]"}], "]"}]}], 
+   "*)"}]}], "\[IndentingNewLine]", 
+ RowBox[{"Graphics3D", "[", 
+  RowBox[{
+   RowBox[{"Cylinder", "[", 
+    RowBox[{
+     RowBox[{"{", 
+      RowBox[{
+       RowBox[{"{", 
+        RowBox[{"0", ",", "0", ",", "0"}], "}"}], ",", 
+       RowBox[{"{", 
+        RowBox[{"1", ",", "1", ",", "0"}], "}"}]}], "}"}], ",", 
+     RowBox[{"1", "/", "4"}]}], "]"}], ",", 
+   RowBox[{"AxesLabel", "\[Rule]", 
+    RowBox[{"{", 
+     RowBox[{
+      RowBox[{"Style", "[", 
+       RowBox[{"\"\<\>\"", ",", "Black", ",", 
+        RowBox[{"FontSize", "\[Rule]", "18"}]}], "]"}], ",", 
+      RowBox[{"Style", "[", 
+       RowBox[{"\"\<\>\"", ",", "Black", ",", 
+        RowBox[{"FontSize", "\[Rule]", "18"}]}], "]"}], ",", 
+      RowBox[{"Style", "[", 
+       RowBox[{"\"\<\>\"", ",", "Black", ",", 
+        RowBox[{"FontSize", "\[Rule]", "18"}]}], "]"}]}], "}"}]}], ",", 
+   RowBox[{"Axes", "\[Rule]", "True"}], ",", " ", 
+   RowBox[{"Ticks", "\[Rule]", 
+    RowBox[{"{", 
+     RowBox[{
+      RowBox[{"{", 
+       RowBox[{
+        RowBox[{"{", 
+         RowBox[{"0", ",", "\"\<\>\""}], "}"}], ",", 
+        RowBox[{"{", 
+         RowBox[{".25", ",", "\"\<\>\""}], "}"}], ",", 
+        RowBox[{"{", 
+         RowBox[{".5", ",", "\"\<\>\""}], "}"}], ",", 
+        RowBox[{"{", 
+         RowBox[{".75", ",", "\"\<\>\""}], "}"}], ",", 
+        RowBox[{"{", 
+         RowBox[{"1", ",", "\"\<\>\""}], "}"}]}], "}"}], ",", 
+      RowBox[{"{", 
+       RowBox[{
+        RowBox[{"{", 
+         RowBox[{"0", ",", "\"\<\>\""}], "}"}], ",", 
+        RowBox[{"{", 
+         RowBox[{".25", ",", "\"\<\>\""}], "}"}], ",", 
+        RowBox[{"{", 
+         RowBox[{".5", ",", "\"\<\>\""}], "}"}], ",", 
+        RowBox[{"{", 
+         RowBox[{".75", ",", "\"\<\>\""}], "}"}], ",", 
+        RowBox[{"{", 
+         RowBox[{"1", ",", "\"\<\>\""}], "}"}]}], "}"}], ",", 
+      RowBox[{"{", 
+       RowBox[{
+        RowBox[{"{", 
+         RowBox[{"0", ",", "\"\<\>\""}], "}"}], ",", 
+        RowBox[{"{", 
+         RowBox[{".25", ",", "\"\<\>\""}], "}"}], ",", 
+        RowBox[{"{", 
+         RowBox[{".5", ",", "\"\<\>\""}], "}"}], ",", 
+        RowBox[{"{", 
+         RowBox[{".75", ",", "\"\<\>\""}], "}"}], ",", 
+        RowBox[{"{", 
+         RowBox[{"1", ",", "\"\<\>\""}], "}"}]}], "}"}]}], "}"}]}]}], 
+  "]"}]}], "Input",
+ CellChangeTimes->{{3.8145849381188507`*^9, 3.814584942343025*^9}, {
+  3.814585101531724*^9, 3.814585108147912*^9}, {3.814585227186368*^9, 
+  3.8145852839161997`*^9}, {3.814585378997324*^9, 3.814585417820702*^9}, {
+  3.8145855005699244`*^9, 3.814585513619728*^9}, {3.814585590772366*^9, 
+  3.8145856128192387`*^9}, {3.814585660852384*^9, 3.814585790256781*^9}, {
+  3.8145860190973787`*^9, 3.814586061050609*^9}, {3.8145861011733427`*^9, 
+  3.814586188273677*^9}, {3.814586230743414*^9, 3.8145862365283003`*^9}, {
+  3.814586354746565*^9, 3.814586362250866*^9}, {3.823156122611533*^9, 
+  3.823156127558526*^9}, {3.823156165078951*^9, 3.8231562106996813`*^9}, {
+  3.823156269992361*^9, 3.823156275066869*^9}, {3.8231563869387712`*^9, 
+  3.8231563901769657`*^9}},
+ CellLabel->"In[15]:=",ExpressionUUID->"f878f748-4152-40c1-b4ba-54ea87b123df"],
+
+Cell[BoxData[
+ Graphics3DBox[
+  CylinderBox[{{0, 0, 0}, {1, 1, 0}}, NCache[Rational[1, 4], 0.25]],
+  Axes->True,
+  AxesLabel->{
+    FormBox[
+     StyleBox["\"\"", 
+      GrayLevel[0], FontSize -> 18, StripOnInput -> False], TraditionalForm], 
+    
+    FormBox[
+     StyleBox["\"\"", 
+      GrayLevel[0], FontSize -> 18, StripOnInput -> False], TraditionalForm], 
+    
+    FormBox[
+     StyleBox["\"\"", 
+      GrayLevel[0], FontSize -> 18, StripOnInput -> False], TraditionalForm]},
+  
+  ImageSize->{356.36126917913305`, 402.34255307539917`},
+  ImageSizeRaw->Automatic,
+  Ticks->{{{0, 
+      FormBox["\"\"", TraditionalForm]}, {0.25, 
+      FormBox["\"\"", TraditionalForm]}, {0.5, 
+      FormBox["\"\"", TraditionalForm]}, {0.75, 
+      FormBox["\"\"", TraditionalForm]}, {1, 
+      FormBox["\"\"", TraditionalForm]}}, {{0, 
+      FormBox["\"\"", TraditionalForm]}, {0.25, 
+      FormBox["\"\"", TraditionalForm]}, {0.5, 
+      FormBox["\"\"", TraditionalForm]}, {0.75, 
+      FormBox["\"\"", TraditionalForm]}, {1, 
+      FormBox["\"\"", TraditionalForm]}}, {{0, 
+      FormBox["\"\"", TraditionalForm]}, {0.25, 
+      FormBox["\"\"", TraditionalForm]}, {0.5, 
+      FormBox["\"\"", TraditionalForm]}, {0.75, 
+      FormBox["\"\"", TraditionalForm]}, {1, 
+      FormBox["\"\"", TraditionalForm]}}},
+  ViewPoint->{0.13227543968152727`, -0.15704318126670402`, 
+   3.3775495033048286`},
+  ViewVertical->{0.1576353831199075, -0.017199831799005433`, 
+   0.9873475840729676}]], "Output",
+ CellChangeTimes->{{3.814585514241008*^9, 3.814585535757744*^9}, {
+   3.814585593622213*^9, 3.8145856134463997`*^9}, {3.81458566927055*^9, 
+   3.8145857907032003`*^9}, {3.81458602146909*^9, 3.8145860626182823`*^9}, {
+   3.8145861139429913`*^9, 3.814586188979512*^9}, 3.8145862384393873`*^9, 
+   3.8145863637472143`*^9, {3.823156123496283*^9, 3.823156128202382*^9}, {
+   3.823156165670289*^9, 3.823156171659027*^9}, 3.823156211673636*^9, 
+   3.823156275807312*^9, 3.823156391026271*^9},
+ CellLabel->"Out[16]=",ExpressionUUID->"8c780c10-d014-45f2-a5b1-e5370f53dd95"]
+}, Open  ]],
+
+Cell[CellGroupData[{
+
+Cell[BoxData[
+ RowBox[{"Show", "[", 
+  RowBox[{"%16", ",", 
+   RowBox[{"Boxed", "\[Rule]", "False"}]}], "]"}]], "Input",
+ NumberMarks->False,
+ CellLabel->"In[17]:=",ExpressionUUID->"4d2b66d0-572c-49e3-91b3-49f67c8b86ac"],
+
+Cell[BoxData[
+ Graphics3DBox[
+  CylinderBox[{{0, 0, 0}, {1, 1, 0}}, NCache[Rational[1, 4], 0.25]],
+  Axes->True,
+  AxesLabel->{
+    FormBox[
+     StyleBox["\"\"", 
+      GrayLevel[0], FontSize -> 18, StripOnInput -> False], TraditionalForm], 
+    
+    FormBox[
+     StyleBox["\"\"", 
+      GrayLevel[0], FontSize -> 18, StripOnInput -> False], TraditionalForm], 
+    
+    FormBox[
+     StyleBox["\"\"", 
+      GrayLevel[0], FontSize -> 18, StripOnInput -> False], TraditionalForm]},
+  
+  Boxed->False,
+  Ticks->{{{0, 
+      FormBox["\"\"", TraditionalForm]}, {0.25, 
+      FormBox["\"\"", TraditionalForm]}, {0.5, 
+      FormBox["\"\"", TraditionalForm]}, {0.75, 
+      FormBox["\"\"", TraditionalForm]}, {1, 
+      FormBox["\"\"", TraditionalForm]}}, {{0, 
+      FormBox["\"\"", TraditionalForm]}, {0.25, 
+      FormBox["\"\"", TraditionalForm]}, {0.5, 
+      FormBox["\"\"", TraditionalForm]}, {0.75, 
+      FormBox["\"\"", TraditionalForm]}, {1, 
+      FormBox["\"\"", TraditionalForm]}}, {{0, 
+      FormBox["\"\"", TraditionalForm]}, {0.25, 
+      FormBox["\"\"", TraditionalForm]}, {0.5, 
+      FormBox["\"\"", TraditionalForm]}, {0.75, 
+      FormBox["\"\"", TraditionalForm]}, {1, 
+      FormBox["\"\"", TraditionalForm]}}}]], "Output",
+ CellChangeTimes->{3.823156396660554*^9},
+ CellLabel->"Out[17]=",ExpressionUUID->"677e0073-a7c2-45f3-aee0-28eed0420264"]
+}, Open  ]],
+
+Cell[CellGroupData[{
+
+Cell[BoxData[
+ RowBox[{"Show", "[", 
+  RowBox[{"%17", ",", 
+   RowBox[{"Axes", "\[Rule]", "False"}]}], "]"}]], "Input",
+ NumberMarks->False,
+ CellLabel->"In[18]:=",ExpressionUUID->"8d647537-8f2f-4a70-8798-b8ca2d55edd4"],
+
+Cell[BoxData[
+ Graphics3DBox[
+  CylinderBox[{{0, 0, 0}, {1, 1, 0}}, NCache[Rational[1, 4], 0.25]],
+  Axes->False,
+  AxesLabel->{
+    FormBox[
+     StyleBox["\"\"", 
+      GrayLevel[0], FontSize -> 18, StripOnInput -> False], TraditionalForm], 
+    
+    FormBox[
+     StyleBox["\"\"", 
+      GrayLevel[0], FontSize -> 18, StripOnInput -> False], TraditionalForm], 
+    
+    FormBox[
+     StyleBox["\"\"", 
+      GrayLevel[0], FontSize -> 18, StripOnInput -> False], TraditionalForm]},
+  
+  Boxed->False,
+  ImageSize->{384.50902826055517`, 282.70914231704666`},
+  ImageSizeRaw->Automatic,
+  Ticks->{{{0, 
+      FormBox["\"\"", TraditionalForm]}, {0.25, 
+      FormBox["\"\"", TraditionalForm]}, {0.5, 
+      FormBox["\"\"", TraditionalForm]}, {0.75, 
+      FormBox["\"\"", TraditionalForm]}, {1, 
+      FormBox["\"\"", TraditionalForm]}}, {{0, 
+      FormBox["\"\"", TraditionalForm]}, {0.25, 
+      FormBox["\"\"", TraditionalForm]}, {0.5, 
+      FormBox["\"\"", TraditionalForm]}, {0.75, 
+      FormBox["\"\"", TraditionalForm]}, {1, 
+      FormBox["\"\"", TraditionalForm]}}, {{0, 
+      FormBox["\"\"", TraditionalForm]}, {0.25, 
+      FormBox["\"\"", TraditionalForm]}, {0.5, 
+      FormBox["\"\"", TraditionalForm]}, {0.75, 
+      FormBox["\"\"", TraditionalForm]}, {1, 
+      FormBox["\"\"", TraditionalForm]}}},
+  ViewPoint->{1.6159315882273657`, 2.9570574586321934`, 0.3075325812279032},
+  ViewVertical->{-0.05857682963376609, 0.3175264439661212, 
+   0.9464384356165416}]], "Output",
+ CellChangeTimes->{3.823156402973934*^9},
+ CellLabel->"Out[18]=",ExpressionUUID->"bead7e01-7ea8-4823-8164-a30342ad8d38"]
+}, Open  ]]
+},
+WindowSize->{808, 778},
+WindowMargins->{{4, Automatic}, {Automatic, 4}},
+FrontEndVersion->"12.1 for Mac OS X x86 (64-bit) (March 18, 2020)",
+StyleDefinitions->"Default.nb",
+ExpressionUUID->"42d41248-0709-4a4d-aba7-dbe642d863c5"
+]
+(* End of Notebook Content *)
+
+(* Internal cache information *)
+(*CellTagsOutline
+CellTagsIndex->{}
+*)
+(*CellTagsIndex
+CellTagsIndex->{}
+*)
+(*NotebookFileOutline
+Notebook[{
+Cell[CellGroupData[{
+Cell[580, 22, 6057, 153, 304, "Input",ExpressionUUID->"f878f748-4152-40c1-b4ba-54ea87b123df"],
+Cell[6640, 177, 2048, 46, 419, "Output",ExpressionUUID->"8c780c10-d014-45f2-a5b1-e5370f53dd95"]
+}, Open  ]],
+Cell[CellGroupData[{
+Cell[8725, 228, 220, 5, 30, "Input",ExpressionUUID->"4d2b66d0-572c-49e3-91b3-49f67c8b86ac"],
+Cell[8948, 235, 1365, 35, 295, "Output",ExpressionUUID->"677e0073-a7c2-45f3-aee0-28eed0420264"]
+}, Open  ]],
+Cell[CellGroupData[{
+Cell[10350, 275, 219, 5, 30, "Input",ExpressionUUID->"8d647537-8f2f-4a70-8798-b8ca2d55edd4"],
+Cell[10572, 282, 1611, 40, 323, "Output",ExpressionUUID->"bead7e01-7ea8-4823-8164-a30342ad8d38"]
+}, Open  ]]
+}
+]
+*)
+
