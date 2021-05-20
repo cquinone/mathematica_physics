@@ -10,10 +10,10 @@
 NotebookFileLineBreakTest
 NotebookFileLineBreakTest
 NotebookDataPosition[       158,          7]
-NotebookDataLength[     76531,       2023]
-NotebookOptionsPosition[     75855,       2004]
-NotebookOutlinePosition[     76250,       2020]
-CellTagsIndexPosition[     76207,       2017]
+NotebookDataLength[     76565,       2027]
+NotebookOptionsPosition[     75888,       2008]
+NotebookOutlinePosition[     76284,       2024]
+CellTagsIndexPosition[     76241,       2021]
 WindowFrame->Normal*)
 
 (* Beginning of Notebook Content *)
@@ -497,16 +497,18 @@ Cell[BoxData[{
   "\[IndentingNewLine]"}], "\[IndentingNewLine]", 
  RowBox[{
   RowBox[{"ident", " ", "=", " ", 
-   RowBox[{"IdentityMatrix", "[", "3", "]"}]}], 
-  ";"}], "\[IndentingNewLine]", 
+   RowBox[{"IdentityMatrix", "[", "3", "]"}]}], ";"}], "\[IndentingNewLine]", 
+
  RowBox[{
-  RowBox[{"symmv", " ", "=", 
-   RowBox[{"(", 
-    RowBox[{"gradv", "+", 
-     RowBox[{"Transpose", "[", "gradv", "]"}]}], ")"}]}], ";", "  ", 
+  RowBox[{
+   RowBox[{"symmv", " ", "=", 
+    RowBox[{"(", 
+     RowBox[{"gradv", "+", 
+      RowBox[{"Transpose", "[", "gradv", "]"}]}], ")"}]}], ";"}], "  ", 
   RowBox[{"(*", " ", 
    RowBox[{"ACTUALLY", " ", "D", "*", 
-    RowBox[{"2", "!!"}]}], "  ", "*)"}], "\[IndentingNewLine]", 
+    RowBox[{"2", "!!"}]}], "  ", "*)"}]}], "\[IndentingNewLine]", 
+ RowBox[{
   RowBox[{
    RowBox[{"qtens", "[", "nhat_", "]"}], " ", ":=", " ", 
    RowBox[{"s", "*", 
@@ -944,7 +946,7 @@ Cell[BoxData[{
   RowBox[{"FullSimplify", "[", 
    RowBox[{"alphadot", "[", 
     RowBox[{"s", ",", "\[Phi]", ",", "\[Alpha]"}], "]"}], "]"}], 
-  "\n"}], "\[IndentingNewLine]", 
+  "\[IndentingNewLine]"}], "\n", 
  RowBox[{
   RowBox[{
    RowBox[{"alphadot", "[", 
@@ -1186,23 +1188,25 @@ Cell[BoxData[{
            RowBox[{"\[Phi]", "\[Rule]", "phi"}], ",", 
            RowBox[{"\[Alpha]", "\[Rule]", "alph"}], ",", 
            RowBox[{"s", "\[Rule]", "order"}]}], "}"}]}]}
-      }], ")"}]}], " ", ";", 
-   RowBox[{"(*", " ", 
+      }], ")"}]}], " ", ";"}], 
+  RowBox[{"(*", " ", 
+   RowBox[{
     RowBox[{
      RowBox[{
-      RowBox[{
-      "stability", " ", "matrix", " ", "assuming", " ", "s", " ", 
-       "constant"}], " ", "..."}], " ", "haver", " ", "to", " ", "simul", " ",
-      "solve", " ", "to", " ", "get", " ", "full", " ", "set", " ", "and", 
-     " ", "then", " ", "define", " ", "upper", " ", "matrix", " ", "to", " ", 
-     "check"}], "*)"}], "\[IndentingNewLine]", 
-   RowBox[{"(*", 
-    RowBox[{
-     RowBox[{"Simplify", "[", 
-      RowBox[{"MatrixForm", "[", 
-       RowBox[{"m", "[", 
-        RowBox[{"\[Phi]", ",", "\[Alpha]", ",", "s"}], "]"}], "]"}], "]"}], 
-     ";"}], "*)"}], "\[IndentingNewLine]", 
+     "stability", " ", "matrix", " ", "assuming", " ", "s", " ", "constant"}],
+      " ", "..."}], " ", "haver", " ", "to", " ", "simul", " ", "solve", " ", 
+    "to", " ", "get", " ", "full", " ", "set", " ", "and", " ", "then", " ", 
+    "define", " ", "upper", " ", "matrix", " ", "to", " ", "check"}], "*)"}], 
+  "\[IndentingNewLine]", 
+  RowBox[{"(*", 
+   RowBox[{
+    RowBox[{"Simplify", "[", 
+     RowBox[{"MatrixForm", "[", 
+      RowBox[{"m", "[", 
+       RowBox[{"\[Phi]", ",", "\[Alpha]", ",", "s"}], "]"}], "]"}], "]"}], 
+    ";"}], "*)"}]}], "\[IndentingNewLine]", 
+ RowBox[{
+  RowBox[{
    RowBox[{"Simplify", "[", 
     RowBox[{"MatrixForm", "[", 
      RowBox[{"m", "[", 
@@ -2002,7 +2006,7 @@ Cell[BoxData[
   "Out[440]=",ExpressionUUID->"bd042353-59f7-4a1d-ac17-9412b515a483"]
 }, Open  ]]
 },
-WindowSize->{1003, 706},
+WindowSize->{Full, Full},
 WindowMargins->{{33, Automatic}, {Automatic, 41}},
 FrontEndVersion->"12.1 for Mac OS X x86 (64-bit) (March 18, 2020)",
 StyleDefinitions->"Default.nb",
@@ -2019,11 +2023,11 @@ CellTagsIndex->{}
 *)
 (*NotebookFileOutline
 Notebook[{
-Cell[558, 20, 4549, 106, 367, "Input",ExpressionUUID->"6c12b451-4fcd-4343-90a8-64bd9a3c5de3"],
+Cell[558, 20, 4549, 106, 346, "Input",ExpressionUUID->"6c12b451-4fcd-4343-90a8-64bd9a3c5de3"],
 Cell[CellGroupData[{
-Cell[5132, 130, 69185, 1825, 2727, "Input",ExpressionUUID->"aad7fbfa-31cd-41fc-8030-26e96e234b09"],
-Cell[74320, 1957, 640, 17, 52, "Output",ExpressionUUID->"e2c402b6-5058-43af-9703-9f21843fcaae"],
-Cell[74963, 1976, 876, 25, 52, "Output",ExpressionUUID->"bd042353-59f7-4a1d-ac17-9412b515a483"]
+Cell[5132, 130, 69218, 1829, 2440, "Input",ExpressionUUID->"aad7fbfa-31cd-41fc-8030-26e96e234b09"],
+Cell[74353, 1961, 640, 17, 52, "Output",ExpressionUUID->"e2c402b6-5058-43af-9703-9f21843fcaae"],
+Cell[74996, 1980, 876, 25, 52, "Output",ExpressionUUID->"bd042353-59f7-4a1d-ac17-9412b515a483"]
 }, Open  ]]
 }
 ]
