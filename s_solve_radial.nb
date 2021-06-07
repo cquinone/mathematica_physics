@@ -10,10 +10,10 @@
 NotebookFileLineBreakTest
 NotebookFileLineBreakTest
 NotebookDataPosition[       158,          7]
-NotebookDataLength[     65540,       1525]
-NotebookOptionsPosition[     64730,       1503]
-NotebookOutlinePosition[     65125,       1519]
-CellTagsIndexPosition[     65082,       1516]
+NotebookDataLength[     65666,       1525]
+NotebookOptionsPosition[     64856,       1503]
+NotebookOutlinePosition[     65251,       1519]
+CellTagsIndexPosition[     65208,       1516]
 WindowFrame->Normal*)
 
 (* Beginning of Notebook Content *)
@@ -312,18 +312,17 @@ Cell[BoxData[
    RowBox[{
     RowBox[{"vol", " ", "=", " ", ".39"}], ";"}], "\[IndentingNewLine]", 
    RowBox[{
-    RowBox[{"zRatio", " ", "=", " ", ".005"}], ";"}], " ", 
-   RowBox[{"(*", " ", 
-    RowBox[{
-     RowBox[{"z", "/", "R"}], ",", " ", 
+    RowBox[{"zRatio", " ", "=", " ", "0.005"}], ";", " ", 
+    RowBox[{"(*", " ", 
      RowBox[{
-     "in", " ", "principle", " ", "smaller", " ", "than", " ", "this", " ", 
-      "buts", " ", "lets", " ", "just", " ", "see"}]}], " ", "*)"}], 
-   "\[IndentingNewLine]", 
+      RowBox[{"z", "/", "R"}], ",", " ", 
+      RowBox[{
+      "in", " ", "principle", " ", "smaller", " ", "than", " ", "this", " ", 
+       "buts", " ", "lets", " ", "just", " ", "see"}]}], " ", "*)"}], 
+    "\[IndentingNewLine]", 
+    RowBox[{"rRatio", " ", "=", " ", "1"}], ";"}], "\[IndentingNewLine]", 
    RowBox[{
-    RowBox[{"rRatio", " ", "=", " ", ".05"}], ";"}], "\[IndentingNewLine]", 
-   RowBox[{
-    RowBox[{"gradv", " ", "=", " ", ".001"}], ";", "  ", 
+    RowBox[{"gradv", " ", "=", " ", "35"}], ";", "  ", 
     RowBox[{"(*", " ", 
      RowBox[{
       RowBox[{"this", " ", "is", " ", "now", " ", "mu_hat", "*", "R"}], ",", 
@@ -334,13 +333,13 @@ Cell[BoxData[
    "\[IndentingNewLine]", 
    RowBox[{"file", "=", 
     RowBox[{"OpenWrite", "[", 
-     RowBox[{"\"\<rad_2_r05_z005\>\"", ",", 
+     RowBox[{"\"\<rad_2_r1_z0\>\"", ",", 
       RowBox[{"FormatType", "\[Rule]", "OutputForm"}]}], "]"}]}], 
    "\[IndentingNewLine]", 
    RowBox[{
     RowBox[{"While", "[", 
      RowBox[{
-      RowBox[{"gradv", " ", "<", " ", "2"}], ",", " ", 
+      RowBox[{"gradv", " ", "<", " ", "35.03"}], ",", " ", 
       RowBox[{
        RowBox[{"Write", "[", 
         RowBox[{"file", ",", " ", 
@@ -488,8 +487,8 @@ Cell[BoxData[
         RowBox[{"gradv", " ", "+", " ", "deltav"}]}], ";"}]}], "]"}], ";"}], 
    "\[IndentingNewLine]", 
    RowBox[{
-    RowBox[{"Close", "[", "file", "]"}], ";"}], "\[IndentingNewLine]", 
-   "\[IndentingNewLine]", "\[IndentingNewLine]", "\n", 
+    RowBox[{"Close", "[", "file", "]"}], ";"}], "\[IndentingNewLine]", "\n", 
+   "\[IndentingNewLine]", "\[IndentingNewLine]", 
    "\[IndentingNewLine]"}]}]], "Input",
  CellChangeTimes->{{3.827981941549197*^9, 3.8279819673069057`*^9}, {
    3.82798199779751*^9, 3.827982247986978*^9}, {3.8298347232057447`*^9, 
@@ -513,8 +512,11 @@ Cell[BoxData[
    3.830345538026691*^9, 3.830345548318595*^9}, {3.830346016976831*^9, 
    3.8303460695351257`*^9}, {3.830346104900155*^9, 3.830346189315155*^9}, {
    3.830347310236231*^9, 3.830347336881729*^9}, {3.830451690271154*^9, 
-   3.830451708949491*^9}, {3.830528002418519*^9, 3.830528029734703*^9}},
- CellLabel->"In[88]:=",ExpressionUUID->"46bd5e06-bee2-4760-a62f-649890491f26"],
+   3.830451708949491*^9}, {3.830528002418519*^9, 3.830528029734703*^9}, {
+   3.831471820227291*^9, 3.8314718460634336`*^9}, {3.831471882525408*^9, 
+   3.831471889541366*^9}, {3.831472460076221*^9, 3.831472460713068*^9}},
+ CellLabel->
+  "In[906]:=",ExpressionUUID->"46bd5e06-bee2-4760-a62f-649890491f26"],
 
 Cell[BoxData[
  InterpretationBox[
@@ -534,9 +536,8 @@ Cell[BoxData[
               Evaluator -> Automatic, Method -> "Preemptive"], 
              Alignment -> {Center, Center}, ImageSize -> 
              Dynamic[{
-               Automatic, 
-                3.5 (CurrentValue["FontCapHeight"]/AbsoluteCurrentValue[
-                 Magnification])}]], 
+               Automatic, 3.5 CurrentValue["FontCapHeight"]/
+                AbsoluteCurrentValue[Magnification]}]], 
             GraphicsBox[{
               Thickness[0.0016806722689075631`], {
                FaceForm[{
@@ -650,9 +651,8 @@ Cell[BoxData[
                Thickness[Tiny], 
                GrayLevel[0.7]], FrameTicks -> None, ImageSize -> 
              Dynamic[{
-               Automatic, 
-                3.5 (CurrentValue["FontCapHeight"]/AbsoluteCurrentValue[
-                 Magnification])}]], 
+               Automatic, 3.5 CurrentValue["FontCapHeight"]/
+                AbsoluteCurrentValue[Magnification]}]], 
             GridBox[{{
                RowBox[{
                  TagBox["\"Name: \"", "SummaryItemAnnotation"], 
@@ -660,10 +660,10 @@ Cell[BoxData[
                  TagBox[
                   StyleBox[
                    PaneBox[
-                   "\"rad_2_r05_z005\"", ContentPadding -> False, 
-                    FrameMargins -> 0, StripOnInput -> True, BaselinePosition -> 
-                    Baseline, ImageSize -> {{1, 300}, Automatic}], 
-                   LineBreakWithin -> False], "SummaryItem"]}]}, {
+                   "\"rad_2_r1_z0\"", ContentPadding -> False, FrameMargins -> 
+                    0, StripOnInput -> True, BaselinePosition -> Baseline, 
+                    ImageSize -> {{1, 300}, Automatic}], LineBreakWithin -> 
+                   False], "SummaryItem"]}]}, {
                RowBox[{
                  TagBox["\"Unique ID: \"", "SummaryItemAnnotation"], 
                  "\[InvisibleSpace]", 
@@ -689,9 +689,8 @@ Cell[BoxData[
               Evaluator -> Automatic, Method -> "Preemptive"], 
              Alignment -> {Center, Center}, ImageSize -> 
              Dynamic[{
-               Automatic, 
-                3.5 (CurrentValue["FontCapHeight"]/AbsoluteCurrentValue[
-                 Magnification])}]], 
+               Automatic, 3.5 CurrentValue["FontCapHeight"]/
+                AbsoluteCurrentValue[Magnification]}]], 
             GraphicsBox[{
               Thickness[0.0016806722689075631`], {
                FaceForm[{
@@ -805,16 +804,15 @@ Cell[BoxData[
                Thickness[Tiny], 
                GrayLevel[0.7]], FrameTicks -> None, ImageSize -> 
              Dynamic[{
-               Automatic, 
-                3.5 (CurrentValue["FontCapHeight"]/AbsoluteCurrentValue[
-                 Magnification])}]], 
+               Automatic, 3.5 CurrentValue["FontCapHeight"]/
+                AbsoluteCurrentValue[Magnification]}]], 
             GridBox[{{
                RowBox[{
                  TagBox["\"Name: \"", "SummaryItemAnnotation"], 
                  "\[InvisibleSpace]", 
                  TagBox[
                   PaneBox[
-                  "\"rad_2_r05_z005\"", ImageSize -> {{1, 500}, Automatic}, 
+                  "\"rad_2_r1_z0\"", ImageSize -> {{1, 500}, Automatic}, 
                    BaselinePosition -> Baseline, ContentPadding -> False, 
                    FrameMargins -> 0, StripOnInput -> True], 
                   "SummaryItem"]}]}, {
@@ -832,7 +830,7 @@ Cell[BoxData[
                  TagBox[
                   DynamicBox[
                    ToBoxes[Options[
-                    OutputStream["rad_2_r05_z005", 3]] =!= {}, StandardForm], 
+                    OutputStream["rad_2_r1_z0", 3]] =!= {}, StandardForm], 
                    UpdateInterval -> 1], "SummaryItem"]}]}, {
                RowBox[{
                  TagBox["\"Encoding: \"", "SummaryItemAnnotation"], 
@@ -865,7 +863,7 @@ Cell[BoxData[
        Dynamic[Typeset`open$$], ImageSize -> Automatic]},
      "SummaryPanel"],
     DynamicModuleValues:>{}], "]"}],
-  OutputStream["rad_2_r05_z005", 3],
+  OutputStream["rad_2_r1_z0", 3],
   Editable->False,
   SelectWithContents->True,
   Selectable->False]], "Output",
@@ -873,8 +871,10 @@ Cell[BoxData[
   3.82986251635555*^9, 3.82986261315316*^9, 3.8298626585973587`*^9, 
   3.829863410869864*^9, 3.829867618211928*^9, 3.829869683114894*^9, 
   3.8298914595569344`*^9, 3.829909137612503*^9, 3.829923185966291*^9, 
-  3.8303473461390257`*^9, 3.8304517232256804`*^9, 3.8305280382203503`*^9},
- CellLabel->"Out[97]=",ExpressionUUID->"a4219bba-630d-4d01-a461-bfb9536a0c47"]
+  3.8303473461390257`*^9, 3.8304517232256804`*^9, 3.8305280382203503`*^9, 
+  3.831471850201762*^9, 3.8314718923646517`*^9, 3.831472463048052*^9},
+ CellLabel->
+  "Out[914]=",ExpressionUUID->"f0d60630-ec9d-4557-92ea-5e4a3c9e94ce"]
 }, Open  ]],
 
 Cell[BoxData["\[IndentingNewLine]"], "Input",
@@ -1519,13 +1519,13 @@ CellTagsIndex->{}
 (*NotebookFileOutline
 Notebook[{
 Cell[CellGroupData[{
-Cell[580, 22, 20221, 494, 1663, "Input",ExpressionUUID->"46bd5e06-bee2-4760-a62f-649890491f26"],
-Cell[20804, 518, 19299, 358, 62, "Output",ExpressionUUID->"a4219bba-630d-4d01-a461-bfb9536a0c47"]
+Cell[580, 22, 20364, 496, 1662, "Input",ExpressionUUID->"46bd5e06-bee2-4760-a62f-649890491f26"],
+Cell[20947, 520, 19282, 356, 62, "Output",ExpressionUUID->"f0d60630-ec9d-4557-92ea-5e4a3c9e94ce"]
 }, Open  ]],
-Cell[40118, 879, 149, 3, 52, "Input",ExpressionUUID->"7d749b7c-d77a-4cdf-83c1-cdbf72a90827"],
+Cell[40244, 879, 149, 3, 52, "Input",ExpressionUUID->"7d749b7c-d77a-4cdf-83c1-cdbf72a90827"],
 Cell[CellGroupData[{
-Cell[40292, 886, 17153, 418, 1138, "Input",ExpressionUUID->"0b5c0fa1-6b5c-449e-9df4-b1f6af868dbb"],
-Cell[57448, 1306, 7266, 194, 138, "Output",ExpressionUUID->"b2db1302-3561-4490-a41d-4eb4ac3551c2"]
+Cell[40418, 886, 17153, 418, 1141, "Input",ExpressionUUID->"0b5c0fa1-6b5c-449e-9df4-b1f6af868dbb"],
+Cell[57574, 1306, 7266, 194, 138, "Output",ExpressionUUID->"b2db1302-3561-4490-a41d-4eb4ac3551c2"]
 }, Open  ]]
 }
 ]
